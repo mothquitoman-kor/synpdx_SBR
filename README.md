@@ -35,15 +35,12 @@ are passed explicitly to `synpdx_fit`.
 ```r
 library(synpdx)
 
-# Use the included sample data. Replace this path with your own CSV for a new study.
 csv_path <- system.file(
   "extdata", "PDX_CRC_BYL719+binimetinib_curated.csv", package = "synpdx"
 )
 if (!nzchar(csv_path)) csv_path <- file.path("inst", "extdata", "PDX_CRC_BYL719+binimetinib_curated.csv")
 df <- read.csv(csv_path, stringsAsFactors = FALSE)
 
-# Quick example run. Auto structural/random-effect selection can be enabled for
-# a publication analysis, but it requires substantially more fitting time.
 res <- synpdx_fit(
   data = df,
   control = "control",
