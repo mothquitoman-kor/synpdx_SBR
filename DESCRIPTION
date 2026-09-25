@@ -1,0 +1,23 @@
+Package: synpdx
+Title: NLME-Based Interaction Analysis for PDX Combination Studies
+Version: 0.2.0
+Authors@R: person(
+    given = "Junho",
+    family = "Yoon",
+    role = c("aut", "cre"),
+    email = "mothquitoman@gmail.com"
+  )
+Description: Fits nonlinear mixed-effects tumor-growth and drug-effect models with
+    SAEM, computes manuscript-consistent interaction distances, and provides
+    chi-square and cluster-bootstrap inference for PDX combination studies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.2)
+Imports:
+ saemix (>= 3.5),
+ ggplot2,
+ goftest,
+ stats,
+ utils
