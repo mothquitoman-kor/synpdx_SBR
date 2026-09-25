@@ -94,6 +94,4 @@ When `out_dir` is specified, the following files are written:
 
 ## Citation
 
-The repository contains only the curated sample CSV needed for the example.
-Simulation results, validation outputs, and user-specific analyses are excluded
-from version control.
+The work is not yet published
